@@ -2,7 +2,9 @@ pipeline {
   agent any
   stages {
     stage('Checking pipeline') {
-      sh "cat /etc/*release*"
+      steps {
+        sh "cat /etc/*release*"
+      }
     }
   }
 }
